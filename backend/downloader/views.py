@@ -18,10 +18,11 @@ def download_video(request):
         ydl_opts = {
             'outtmpl': 'downloads/%(title)s.%(ext)s',
             'format': quality,
-            'merge_output_format': 'mp4',  # Forzar MP4
+            'merge_output_format': 'mp4', 
             'postprocessors': [{
                 'key': 'FFmpegVideoConvertor',
-                'preferedformat': 'mp4',  # Convertir a MP4
+                'preferedformat': 'mp4', 
+                
             }],
         }
         
