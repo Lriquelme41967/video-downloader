@@ -51,9 +51,9 @@ def check_url(request):
         return Response({'error': 'URL is required'}, status=status.HTTP_400_BAD_REQUEST)
     
     try:
-        # Configuración para solo extraer información (sin descargar)
+        
         ydl_opts = {
-            'quiet': True,  # No mostrar output innecesario
+            'quiet': True,  
             'no_warnings': True,
         }
         
@@ -82,7 +82,7 @@ def check_url(request):
 def supported_sites(request):
     """Obtener lista de sitios web soportados por yt-dlp"""
     try:
-        # Lista de los sitios más populares soportados por yt-dlp
+        
         popular_sites = [
             'YouTube', 'Vimeo', 'TikTok', 'Twitch', 'Facebook', 'Instagram',
             'Twitter/X', 'Dailymotion', 'Reddit', 'LinkedIn', 'Pinterest',
