@@ -88,8 +88,8 @@ def supported_sites(request):
             'YouTube', 'Vimeo', 'TikTok', 'Twitch', 'Facebook', 'Instagram',
             'Twitter/X', 'Dailymotion', 'Reddit', 'LinkedIn', 'Pinterest',
             'Spotify', 'SoundCloud', 'Bandcamp', 'Archive.org', 'BBC',
-            'CNN', 'ESPN', 'NBC', 'CBS', 'Fox News', 'MTV', 'Comedy Central',
-            'Crunchyroll', 'Funimation', 'Pornhub', 'Xvideos', 'YouPorn'
+            'CNN', 'ESPN', 'NBC', 'CBS', 'Fox News', 'MTV', 'Comedy Central'
+            
         ]
         
         return Response({
